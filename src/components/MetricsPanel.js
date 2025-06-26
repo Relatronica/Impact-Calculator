@@ -190,7 +190,7 @@ const MetricsPanel = ({ placedActions }) => {
 
       <div className="panel-footer">
         <div className="total-actions">
-          Total Actions: {placedActions.length}
+          Azioni selezionate: {placedActions.length}
         </div>
       </div>
     </div>
