@@ -1,0 +1,110 @@
+[
+  {
+    "azione": "Andare al lavoro in bicicletta",
+    "metriche": [
+      "CO2e risparmiata (kg)"
+    ],
+    "esempio_divulgativo": "Risparmi circa 1 kg di CO2 ogni 5 km rispetto all’auto"
+  },
+  {
+    "azione": "Mangiare una bistecca di manzo da 200g",
+    "metriche": [
+      "CO2e (kg)",
+      "Litri d'acqua"
+    ],
+    "esempio_divulgativo": "Produce circa 7 kg di CO2e e consuma oltre 3.000 litri d'acqua"
+  },
+  {
+    "azione": "Usare una console per 1 ora",
+    "metriche": [
+      "Energia (kWh)",
+      "CO2e (kg)"
+    ],
+    "esempio_divulgativo": "Consuma circa 0,2–0,5 kWh, pari a tenere accesa una lampadina LED per 3 giorni"
+  },
+  {
+    "azione": "Bere una tazzina di caffè",
+    "metriche": [
+      "CO2e (g)",
+      "Litri d'acqua"
+    ],
+    "esempio_divulgativo": "Circa 140 L di acqua e 0,1 kg di CO2e per una tazzina"
+  },
+  {
+    "azione": "Fare una doccia di 10 minuti",
+    "metriche": [
+      "Litri d'acqua",
+      "Energia (kWh)"
+    ],
+    "esempio_divulgativo": "Consuma circa 100 L d’acqua e 1–2 kWh per l’acqua calda"
+  },
+  {
+    "azione": "Indossare una maglietta di cotone",
+    "metriche": [
+      "Litri d'acqua",
+      "CO2e (kg)"
+    ],
+    "esempio_divulgativo": "Oltre 2.500 L di acqua e circa 2 kg di CO2e"
+  },
+  {
+    "azione": "Comprare un nuovo smartphone",
+    "metriche": [
+      "CO2e (kg)",
+      "Energia (kWh)"
+    ],
+    "esempio_divulgativo": "Circa 70 kg di CO2e, pari all’uso domestico di energia per una settimana"
+  },
+  {
+    "azione": "Inviare un’email con allegato",
+    "metriche": [
+      "CO2e (g)"
+    ],
+    "esempio_divulgativo": "Circa 50 g di CO2e — come far bollire l’acqua per una tazza di tè"
+  },
+  {
+    "azione": "Guardare Netflix per 1 ora",
+    "metriche": [
+      "CO2e (kg)",
+      "Energia (kWh)"
+    ],
+    "esempio_divulgativo": "Circa 0,1–0,4 kg di CO2e, dipende dalla rete usata"
+  },
+  {
+    "azione": "Mangiare una banana",
+    "metriche": [
+      "CO2e (g)",
+      "Distanza di trasporto"
+    ],
+    "esempio_divulgativo": "Circa 80 g di CO2e, spesso trasportata via nave"
+  },
+  {
+    "azione": "Usare l’asciugatrice per un carico",
+    "metriche": [
+      "Energia (kWh)",
+      "CO2e (kg)"
+    ],
+    "esempio_divulgativo": "Consuma 3–5 kWh, pari a 2–4 kg di CO2e"
+  },
+  {
+    "azione": "Volo Milano-Parigi (andata)",
+    "metriche": [
+      "CO2e (kg)"
+    ],
+    "esempio_divulgativo": "Circa 120–150 kg di CO2e per passeggero"
+  },
+  {
+    "azione": "Comprare vestiti fast fashion (jeans e t-shirt)",
+    "metriche": [
+      "CO2e (kg)",
+      "Litri d'acqua"
+    ],
+    "esempio_divulgativo": "Oltre 20 kg di CO2e e 10.000 litri d'acqua"
+  },
+  {
+    "azione": "Guidare 5 km in auto",
+    "metriche": [
+      "CO2e (kg)"
+    ],
+    "esempio_divulgativo": "Circa 1 kg di CO2e per un’auto media"
+  }
+]

@@ -1,0 +1,110 @@
+.layout-container {
+  display: grid;
+  grid-template-columns: 320px 1fr 350px;
+  height: 100vh;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  gap: 2px;
+  padding: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Enhanced child component styling */
+.layout-container > * {
+  background: linear-gradient(145deg, var(--bg-secondary), var(--bg-tertiary));
+  border: 1px solid var(--border-primary);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 
+    0 4px 6px var(--shadow-dark),
+    0 1px 3px var(--shadow-dark),
+    inset 0 1px 0 var(--shadow-light);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+}
+
+.layout-container > *:hover {
+  transform: translateY(-1px);
+  box-shadow: 
+    0 8px 15px var(--shadow-dark),
+    0 3px 6px var(--shadow-dark),
+    inset 0 1px 0 var(--shadow-light);
+  border-color: var(--border-secondary);
+}
+
+/* Responsive design with improved breakpoints */
+@media (max-width: 1400px) {
+  .layout-container {
+    grid-template-columns: 300px 1fr 330px;
+    gap: 1px;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .layout-container {
+    grid-template-columns: 280px 1fr 300px;
+    padding: 4px;
+  }
+}
+
+@media (max-width: 992px) {
+  .layout-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: auto;
+    min-height: 100vh;
+    gap: 8px;
+    padding: 8px;
+  }
+  
+  .layout-container > * {
+    border-radius: 8px;
+    min-height: 200px;
+  }
+  
+  .layout-container > *:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout-container {
+    gap: 6px;
+    padding: 6px;
+  }
+  
+  .layout-container > * {
+    border-radius: 6px;
+    box-shadow: 
+      0 2px 4px var(--shadow-dark),
+      inset 0 1px 0 var(--shadow-light);
+  }
+}
+
+@media (max-width: 480px) {
+  .layout-container {
+    gap: 4px;
+    padding: 4px;
+  }
+  
+  .layout-container > * {
+    border-radius: 4px;
+    min-height: 150px;
+  }
+}
+
+/* Loading state animation */
+.layout-container.loading > * {
+  opacity: 0.7;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
