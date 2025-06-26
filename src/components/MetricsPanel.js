@@ -31,10 +31,10 @@ const MetricsPanel = ({ placedActions }) => {
 
   return (
     <div className="metrics-panel">
-      <div className="panel-header">
+       <div className="panel-header">
         <h2>Environmental Impact</h2>
         <p>Real-time calculations based on your actions</p>
-      </div>
+      </div> 
 
       <div className="metrics-summary">
         <div className={`metric-card co2 ${getImpactLevel(totals.co2, 'co2')}`}>

@@ -13,6 +13,7 @@
   background: linear-gradient(135deg, var(--bg-tertiary), var(--bg-secondary));
   backdrop-filter: blur(10px);
   position: relative;
+  display: none;
 }
 
 .panel-header::before {

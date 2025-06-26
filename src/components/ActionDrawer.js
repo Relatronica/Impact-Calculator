@@ -33,8 +33,8 @@ const ActionDrawer = ({ actionsData, onActionSelect, selectedActions, onDragStar
   return (
 <div className="action-drawer">
   <div className="drawer-header">
-    <h2>Impact Lab</h2>
-    <p className="version-credit">v1.0 · Designed by Relatronica</p>
+    <h1>Impact Lab</h1>
+    <p className="version-credit">Beta v2.1 · Designed by Relatronica</p>
     <p className="description">
       Costruisci la <strong>giornata-tipo</strong> della tua vita trascinando nella griglia le azioni che compi ogni giorno: fare colazione, prendere i mezzi, lavorare da casa o ordinare online. Ogni scelta ha un impatto, e qui lo vedi prendere forma: <em>CO₂e, acqua, energia</em>.
     </p>

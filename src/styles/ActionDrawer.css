@@ -4,6 +4,7 @@
   height: 100%;
   position: relative;
   overflow: hidden;
+  background-color: #376f3f;
 }
 
 .drawer-header {
@@ -29,6 +30,18 @@
   font-weight: 700;
   letter-spacing: -0.02em;
   background: linear-gradient(135deg, var(--text-primary), var(--accent-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.drawer-header h1 {
+  margin: 0 0 8px 0;
+  font-size: 2 rem;
+  color: var(--text-primary);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #b2d554, #287ebd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -343,4 +356,18 @@
 .version-credit{
   font-size: 12px !important;
   margin-bottom: 10px !important;
+  color: white !important;
+}
+
+.description{
+  font-size: 13px !important;
+  margin-bottom: 10px !important;
+  color: white !important;
+}
+
+.instructions{
+  font-size: 13px !important;
+  margin-bottom: 10px !important;
+  color: white !important;
+  margin-left: 30px !important;
 }

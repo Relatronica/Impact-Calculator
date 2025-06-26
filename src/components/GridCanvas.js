@@ -153,8 +153,8 @@ const GridCanvas = ({ placedActions, onActionPlace, onActionRemove, draggedActio
       <div className="canvas-header">
         <div className="header-content">
           <div className="title-section">
-            <h2>Interactive Action Grid</h2>
-            <p>Drag actions here or click to place/remove</p>
+            <h2>Ogni scelta conta</h2>
+            <p> Compila la tua giornata come faresti con una normale agenda, ma con un tocco in più: ogni attività ti mostra l’impatto ambientale che comporta. Scopri come piccoli cambiamenti possono fare una grande differenza.</p>
           </div>
           
           <div className="grid-controls">
@@ -187,14 +187,14 @@ const GridCanvas = ({ placedActions, onActionPlace, onActionRemove, draggedActio
                 disabled={historyIndex < 0}
                 title="Undo last action"
               >
-                ↶ Undo
+                ↶ Annulla
               </button>
               <button 
                 onClick={handleRedo} 
                 disabled={historyIndex >= actionHistory.length - 1}
                 title="Redo last action"
               >
-                ↷ Redo
+                ↷ Ripeti
               </button>
               <button 
                 onClick={handleClearGrid}
@@ -202,7 +202,7 @@ const GridCanvas = ({ placedActions, onActionPlace, onActionRemove, draggedActio
                 title="Clear all actions"
                 className="clear-btn"
               >
-                🗑 Clear
+                🗑 Cancella tutto
               </button>
             </div>
           </div>
@@ -271,21 +271,21 @@ const GridCanvas = ({ placedActions, onActionPlace, onActionRemove, draggedActio
       <div className="canvas-footer">
         <div className="grid-stats">
           <div className="stat-group">
-            <span className="stat-label">Actions placed:</span>
+            <span className="stat-label">Azioni Inserite:</span>
             <span className="stat-value">{placedActions.length}</span>
           </div>
           <div className="stat-group">
-            <span className="stat-label">Grid size:</span>
+            <span className="stat-label">Griglia:</span>
             <span className="stat-value">{gridDimensions.rows} × {gridDimensions.cols}</span>
           </div>
           <div className="stat-group">
-            <span className="stat-label">Utilization:</span>
+            <span className="stat-label">Percentuale slot utilizzati:</span>
             <span className="stat-value">
               {((placedActions.length / (days.length * hours.length)) * 100).toFixed(1)}%
             </span>
           </div>
           <div className="stat-group">
-            <span className="stat-label">Available cells:</span>
+            <span className="stat-label">Celle disponibili:</span>
             <span className="stat-value">{(days.length * hours.length) - placedActions.length}</span>
           </div>
         </div>
@@ -293,15 +293,15 @@ const GridCanvas = ({ placedActions, onActionPlace, onActionRemove, draggedActio
         <div className="grid-legend">
           <div className="legend-item">
             <span className="legend-icon">🌱</span>
-            <span>CO2 Impact</span>
+            <span>Impatto CO2</span>
           </div>
           <div className="legend-item">
             <span className="legend-icon">💧</span>
-            <span>Water Usage</span>
+            <span>Consumo di acqua</span>
           </div>
           <div className="legend-item">
             <span className="legend-icon">⚡</span>
-            <span>Energy Consumption</span>
+            <span>Consumo di Energia</span>
           </div>
         </div>
       </div>
