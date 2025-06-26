@@ -31,43 +31,57 @@ const ActionDrawer = ({ actionsData, onActionSelect, selectedActions, onDragStar
   };
 
   return (
-    <div className="action-drawer">
-      <div className="drawer-header">
-        <h2>Daily Actions</h2>
-        <p>Select actions to place on your grid</p>
-      </div>
-      
-      <div className="actions-list">
-        {actionsData.map((action, index) => (
-          <div 
-            key={index}
-            className="action-item"
-            draggable={true}
-            onClick={() => handleActionClick(action, index)}
-            onDragStart={(e) => handleDragStart(e, action, index)}
-          >
-            <div className="action-content">
-              <div className="action-title">
-                {action.azione}
-              </div>
-              <div className="action-metrics">
-                <span className="metric-icons">
-                  {getMetricIcons(action.metriche)}
-                </span>
-                <span className="metric-text">
-                  {action.metriche.join(', ')}
-                </span>
-              </div>
-              <div className="action-example">
-                {action.esempio_divulgativo}
-              </div>
-            </div>
-            <div className="action-add-btn">
-              +
-            </div>
+<div className="action-drawer">
+  <div className="drawer-header">
+    <h2>Impact Lab</h2>
+    <p className="version-credit">v1.0 · Designed by Relatronica</p>
+    <p className="description">
+      Costruisci la <strong>giornata-tipo</strong> della tua vita trascinando nella griglia le azioni che compi ogni giorno: fare colazione, prendere i mezzi, lavorare da casa o ordinare online. Ogni scelta ha un impatto, e qui lo vedi prendere forma: <em>CO₂e, acqua, energia</em>.
+    </p>
+    <p className="description provocative">
+      Forse scoprirai che <strong>l’ascensore</strong> pesa più della tua call su Zoom. Forse no. L’unico modo per saperlo è <em>giocare</em> con le tue abitudini. Sei pronto a metterti in discussione?
+    </p>
+    <ol className="instructions">
+      <li>Trascina un'azione dalla lista qui sotto.</li>
+      <li>Rilasciala sulla griglia temporale della tua giornata.</li>
+      <li>Guarda l'impatto aggiornarsi in tempo reale.</li>
+      <li>Modifica, sperimenta, trova alternative più sostenibili.</li>
+    </ol>
+  </div>
+
+  <div className="actions-list">
+    {actionsData.map((action, index) => (
+      <div 
+        key={index}
+        className="action-item"
+        draggable={true}
+        onClick={() => handleActionClick(action, index)}
+        onDragStart={(e) => handleDragStart(e, action, index)}
+      >
+        <div className="action-content">
+          <div className="action-title">
+            {action.azione}
           </div>
-        ))}
+          <div className="action-metrics">
+            <span className="metric-icons">
+              {getMetricIcons(action.metriche)}
+            </span>
+            <span className="metric-text">
+              {action.metriche.join(', ')}
+            </span>
+          </div>
+          <div className="action-example">
+            {action.esempio_divulgativo}
+          </div>
+        </div>
+        <div className="action-add-btn">
+          +
+        </div>
       </div>
+    ))}
+  </div>
+
+
       
       {selectedActions.length > 0 && (
         <div className="selected-counter">

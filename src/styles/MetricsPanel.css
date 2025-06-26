@@ -132,7 +132,6 @@
 }
 
 .metric-card .metric-content {
-  display: flex;
   align-items: center;
   margin-bottom: 12px;
   position: relative;

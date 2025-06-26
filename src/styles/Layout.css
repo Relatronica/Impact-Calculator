@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 320px 1fr 350px;
   height: 100vh;
-  background: var(--bg-primary);
   color: var(--text-primary);
   gap: 2px;
   padding: 8px;
@@ -11,14 +10,7 @@
 
 /* Enhanced child component styling */
 .layout-container > * {
-  background: linear-gradient(145deg, var(--bg-secondary), var(--bg-tertiary));
-  border: 1px solid var(--border-primary);
-  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 
-    0 4px 6px var(--shadow-dark),
-    0 1px 3px var(--shadow-dark),
-    inset 0 1px 0 var(--shadow-light);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   backdrop-filter: blur(10px);
 }
